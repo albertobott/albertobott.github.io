@@ -3130,15 +3130,20 @@ td:last-child {
  * ## main navigation
  * -------------------------------------------------------------------- */
 .s-header__nav {
-    margin-left: var(--vspace-1);
+    display: flex;
+    justify-content: center;  /* Centra orizzontalmente */
+    align-items: center;      /* Centra verticalmente */
+    margin-left: 0;          /* Rimuove il margin sinistro */
+    width: 100%;             /* Occupa tutta la larghezza disponibile */
 }
 
 .s-header__menu-links {
     list-style: none;
-    display   : inline-flex;
-    flex-flow : row nowrap;
-    margin    : 0;
-    padding   : 0;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;  /* Centra gli elementi della lista */
 }
 
 .s-header__menu-links li {
